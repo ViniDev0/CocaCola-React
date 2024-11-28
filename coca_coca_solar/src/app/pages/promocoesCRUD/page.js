@@ -51,11 +51,11 @@ export default function promocoes() {
                <img  id="logo-cliente" src="/images/icons/Cliente-Solar.png" alt=""/>
                <button className={tabelas.closeModal}> <img src="/images/icons/excluir.png" alt=""/></button>
            </div>
-              <div className={tabelas.modalBodyCliente}>
-                <form action="/" className="">
-              <input type="text" id="nome" data-index="new" className="modal-field" placeholder="Nome do Cliente"required/>
-                    <input type="text" id="regiao" className="modal-field" placeholder="Região" required/>
-                    <select id="regiao" className="modal-field" required>
+              <div className={cliente.modalBodyCliente}>
+                <form action="/" className={cliente.modalFormCliente}>
+              <input type="text" id="nome" data-index="new" className={tabelas.modalField} placeholder="Nome do Cliente"required/>
+                    <input type="text" id="regiao" className={tabelas.modalField} placeholder="Região" required/>
+                    <select id="regiao" className={tabelas.modalField} required>
                         <option value="" disabled selected>Selecione a Região</option>
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
@@ -76,14 +76,14 @@ export default function promocoes() {
                         <option value="TO">TO</option>
 
                     </select>
-                    <select id="nivel" className="modal-field" required>
+                    <select id="nivel" className={tabelas.modalField} required>
                         <option value="" disabled selected>Nível do cliente</option>
                         <option value="ouro">Ouro</option>
                         <option value="prata">Prata</option>
                         <option value="bronze">Bronze</option>
                     </select>
                </form>
-               <footer className={tabelas.modalFooter}>
+               <footer className={tabelas.modalFooterCliente}>
                    <button id="salvar" className={tabelas.buttonGreen}>Salvar</button>
                    <button id="cancelar" className={tabelas.buttonRed}>Cancelar</button>
                </footer>

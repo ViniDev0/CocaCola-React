@@ -56,8 +56,8 @@ export default function precos() {
                <img  id="logo-cliente" src="/images/icons/Cliente-Solar.png" alt=""/>
                <button className={tabelas.closeModal}> <img src="/images/icons/excluir.png" alt=""/></button>
            </div>
-              <div className={tabelas.modalBodyCliente}>
-               <form id="form" className={tabelas.modalFormCliente}>
+              <div className={cliente.modalBodyCliente}>
+               <form id="form" className={cliente.modalFormCliente}>
                <input type="text" id="produto" data-index="new" className={tabelas.modalField} placeholder="Nome do Produto"required/>
                     <select id="Canal" className={tabelas.modalField} required>
                         <option value="" disabled selected>Canal</option>
@@ -93,7 +93,7 @@ export default function precos() {
                         <option value="bronze">Bronze</option>
                     </select>
                </form>
-               <footer className={tabelas.modalFooter}>
+               <footer className={tabelas.modalFooterCliente}>
                    <button id="salvar" className={tabelas.buttonGreen}>Salvar</button>
                    <button id="cancelar" className={tabelas.buttonRed}>Cancelar</button>
                </footer>

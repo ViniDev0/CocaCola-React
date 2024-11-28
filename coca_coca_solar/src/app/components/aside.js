@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Styles from "@/app/Styles/Sidebar.module.css";
 
 
-const Sidebar: React.FC = () => {
+const Sidebar = () => {
 
    const handleLogout = () => {
     window.location.href = '';
@@ -27,27 +27,22 @@ const Sidebar: React.FC = () => {
           </div>
         </header>
         <nav className={Styles.botaoCima}>
-          <Link href="/" className={Styles.linki}>
-            <button className={Styles.naviCima}>
-              <span>DASHBOARD</span>
-            </button>
-          </Link>
-          <Link href="/CRUDClientes" className={Styles.linki}>
+          <Link href="./clientesCRUD" className={Styles.linki}>
             <button className={Styles.naviCima}>
               <span>CLIENTES</span>
             </button>
           </Link>
-          <Link href="/CRUDProduto" className={Styles.linki}>
+          <Link href="./produtosCRUD" className={Styles.linki}>
             <button className={Styles.naviCima}>
               <span>PRODUTOS</span>
             </button>
           </Link>
-          <Link href="/CRUDPromocoes" className={Styles.linki}>
+          <Link href="./promocoesCRUD" className={Styles.linki}>
             <button className={Styles.naviCima}>
               <span>PROMOÇÕES</span>
             </button>
           </Link>
-          <Link href="/CRUDPrecos" className={Styles.linki}>
+          <Link href="./precosCRUD" className={Styles.linki}>
             <button className={Styles.naviCima}>
               <span>PREÇOS</span>
             </button>

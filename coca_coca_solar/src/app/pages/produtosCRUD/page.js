@@ -55,8 +55,8 @@ export default function produtos() {
                <img  id="logo-cliente" src="/images/icons/Cliente-Solar.png" alt=""/>
                <button className={tabelas.closeModal}> <img src="/images/icons/excluir.png" alt=""/></button>
            </div>
-              <div className={tabelas.modalBodyCliente}>
-               <form id="form" className={tabelas.modalFormCliente}>
+              <div className={cliente.modalBodyCliente}>
+               <form id="form" className={cliente.modalFormCliente}>
                     <input type="text" id="nome" data-index="new" className={tabelas.modalField} placeholder="Nome do Produto" required/>
                         <input type="text" id="descricao" className={tabelas.modalField} placeholder="Descrição do Produto" required/>
                         <select id="categoria" className={tabelas.modalField} required>
@@ -66,7 +66,7 @@ export default function produtos() {
                             <option value="Chá">Chá</option>
                         </select>
                </form>
-               <footer className={tabelas.modalFooter}>
+               <footer className={tabelas.modalFooterCliente}>
                    <button id="salvar" className={tabelas.buttonGreen}>Salvar</button>
                    <button id="cancelar" className={tabelas.buttonRed}>Cancelar</button>
                </footer>
